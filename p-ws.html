@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WattSense — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html" class="projects-title btn-yellow">← Retour</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <img src="assets/images/ws-logo.png" alt="Logo WattSense" class="project-logo">
+            <div class="project-meta">
+              <h1>WattSense (IoT)</h1>
+              <div class="card-tags">
+                <span class="badge">Node-RED</span>
+                <span class="badge">MQTT</span>
+                <span class="badge">Raspberry Pi</span>
+                <span class="badge">Python</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <p class="intro-quote">
+              <em>"Domotiser sa maison, c'est passer 3 heures à configurer une prise pour gagner 3 secondes à l'allumer."</em>
+            </p>
+            
+            <p>
+              <strong>Bienvenue sur WattSense.</strong> Un projet IoT complet pour surveiller et automatiser la consommation électrique. Parce que savoir que le grille-pain consomme trop, c'est la première étape avant de décider de manger du pain froid.
+            </p>
+
+            <h2>🔧 Le Matos (Les Jouets)</h2>
+            <p>On ne fait pas de l'IoT sans un peu de hardware :</p>
+
+            <ul class="tech-list">
+              <li>
+                <strong>🔌 Prises Shelly :</strong> Les agents doubles. Elles contrôlent l'énergie et la rapportent au QG.
+              </li>
+              <li>
+                <strong>⚡ Prise Meross MSS310 :</strong> La rebelle. Il faut négocier avec son API et récupérer une clé d'authentification pour qu'elle daigne nous parler.
+              </li>
+              <li>
+                <strong>🍓 Raspberry Pi :</strong> Le cerveau de l'opération. Il héberge tout ce petit monde sans (trop) chauffer.
+              </li>
+            </ul>
+
+            <h2>🏗️ L'Usine à Gaz (Software)</h2>
+            <p>Une stack logicielle robuste pour gérer le flux de données :</p>
+            
+            <div class="tech-grid">
+              <div class="tech-item">
+                <h3>Node-RED 🚦</h3>
+                <p>Programmation visuelle. On relie des boîtes avec des fils virtuels pour créer des scénarios complexes (ou des boucles infinies, ça arrive).</p>
+              </div>
+              <div class="tech-item">
+                <h3>Mosquitto 🐭</h3>
+                <p>Le broker MQTT. C'est le facteur ultra-rapide qui livre les messages entre les prises et le serveur. Il ne perd jamais un paquet.</p>
+              </div>
+              <div class="tech-item">
+                <h3>InfluxDB & MySQL 📊</h3>
+                <p>La mémoire. InfluxDB pour les séries temporelles (beaux graphiques) et MySQL pour la structure (SQL classique).</p>
+              </div>
+              <div class="tech-item">
+                <h3>Python 🐍</h3>
+                <p>Le script qui supervise tout, détecte les anomalies et ajuste les priorités énergétiques. Le vrai patron, c'est lui.</p>
+              </div>
+            </div>
+
+            <h2>🧩 Comment ça marche ? (La Magie)</h2>
+            <p>
+              C'est un ballet bien orchestré :
+            </p>
+            <ul class="tech-list">
+              <li><strong>1. Collecte :</strong> Node-RED et Python harcèlent les prises pour avoir leurs données via MQTT.</li>
+              <li><strong>2. Décision :</strong> "Il fait beau ?" "L'électricité est chère ?" -> Le script décide d'allumer ou d'éteindre.</li>
+              <li><strong>3. Visualisation :</strong> Un Dashboard Node-RED pour voir en temps réel combien coûte votre douche chaude.</li>
+            </ul>
+
+            <h2>🚀 Installation (Si vous avez du temps)</h2>
+            <p>
+              Pour reproduire ce chef-d'œuvre sur votre Raspberry Pi :
+            </p>
+            <ul class="tech-list">
+              <li>Installez <strong>Node-RED</strong> : <code>sudo npm install -g --unsafe-perm node-red</code></li>
+              <li>Installez <strong>Mosquitto</strong> : <code>sudo apt install mosquitto</code></li>
+              <li>Configurez <strong>XAMPP</strong> (Apache/MySQL) et créez la BDD <code>solaire</code>.</li>
+              <li>Branchez tout, et priez pour que le Wi-Fi tienne le coup.</li>
+            </ul>
+
+            <h2>🤝 L'Équipe Choc</h2>
+            <p>
+              Projet réalisé par <strong>Guillaume GREDER</strong> (Dév & BDD), <strong>Théo MARCHAND</strong> (Le dompteur de Node-RED) et <strong>Xavier KNOEPPFLER</strong> (L'homme de l'infra).
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <h2>Code Source</h2>
+            <p>Tout est là. Les scripts, les flux, et probablement quelques commentaires désespérés.</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>WattSense</h3>
+                  <span class="gh-author">TetoSolis / IoT-Project</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis/WattSense" target="_blank" class="gh-btn">Voir le dépôt ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas Network — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html" class="projects-title">← Retour</a>
+
+        <article class="project-detail">
+
+          <header class="project-header">
+            <img src="assets/images/an-logo.png" alt="Logo Atlas Network" class="project-logo">
+            <div class="project-meta">
+              <h1>Atlas Network (WSL2025)</h1>
+              <div class="card-tags">
+                <span class="badge">Cisco</span>
+                <span class="badge">Architecture</span>
+                <span class="badge">Cybersécurité</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+  <p class="intro-quote">
+    <em>"120 employés virtuels. 3 Sites. Une infrastructure critique à bâtir de zéro (sans café)."</em>
+  </p>
+  
+  <p>
+    <strong>Bienvenue sur le projet SAE 501.</strong> Officiellement, c'est une simulation des épreuves <strong>WorldSkills</strong>. Officieusement, c'est un marathon technique pour prouver qu'on peut faire cohabiter Linux, Windows et Cisco sans que tout explose.
+  </p>
+
+  <h2>🎯 La Mission</h2>
+  <p>
+    L'entreprise fictive <strong>WorldSkills Lyon 2025 (WSL2025)</strong> avait besoin d'une refonte totale de son IT. Mon rôle d'architecte ? Construire une <strong>forteresse numérique</strong> capable de résister aux pannes, aux hackers, et surtout aux utilisateurs qui cliquent partout.
+  </p>
+
+  <h2>🏗️ Le Terrain de Jeu (Architecture)</h2>
+  <p>Une topologie complexe qui ferait transpirer un routeur bas de gamme :</p>
+  <ul class="tech-list">
+    <li>🏢 <strong>HQ (Siège) :</strong> Le cœur du réacteur. Là où tournent les services critiques (et où on espère que la clim tient le coup).</li>
+    <li>🌍 <strong>Remote Site :</strong> Une filiale connectée via un MAN privé (parce que le VPN public, c'est pour les amateurs).</li>
+    <li>☁️ <strong>Backbone & Internet :</strong> Du routage dynamique VRF / BGP, pour que les paquets ne se perdent pas en route.</li>
+  </ul>
+
+  <h2>🛠️ Arsenal Technique</h2>
+  <p>J'ai déployé une stack complète (et j'ai survécu pour en parler) :</p>
+
+  <div class="tech-grid">
+    <div class="tech-item">
+      <h3>Réseau (Cisco)</h3>
+      <p>VLANs, VTPv2, OSPF & BGP pour le routage, HSRP pour la haute Disponibilité, NAT.</p> 
+    </div>
+    <div class="tech-item">
+      <h3>Système (Linux)</h3>
+      <p>Debian 13 (le seul truc qui marchait bien), NTP, Mail et DNS (Bind9), FTP.</p>
+    </div>
+    <div class="tech-item">
+      <h3>Système (Windows)</h3>
+      <p>Windows Server 2022, Active Directory, GPO (la dictature bienveillante), PKI (gestion de certificats 😭).</p>
+    </div>
+    <div class="tech-item">
+      <h3>Automatisé 🤖</h3>
+      <p>Ansible : Pourquoi configurer 50 switchs à la main quand un script peut planter les 50 en même temps ?</p>
+    </div>
+  </div>
+
+  <h2>🚀 Pourquoi c'est solide (Features)</h2>
+  <ul class="tech-list">
+    <li>🔥 <strong>Cloisonnement VRF :</strong> Séparation stricte. Le trafic Internet ne touche pas au trafic interne. Chacun chez soi.</li>
+    <li>🛡️ <strong>Sécurité "Zero Trust" :</strong> On ne fait confiance à personne. Même le stagiaire doit montrer patte blanche (Certificats + Auth).</li>
+    <li>🔄 <strong>Haute Disponibilité :</strong> Redondance HSRP. Si un routeur meurt, son jumeau prend le relais avant que quelqu'un ne râle.</li>
+  </ul>
+
+  <h2>📸 Architecture</h2>
+  <div class="project-gallery">
+    <img src="https://github.com/user-attachments/assets/56056c8b-ba24-440a-9873-6758cbd59e7f" alt="Topologie Réseau Atlas Network">
+    <p class="caption">Schéma de l'architecture (C'est encore plus beau quand tout est vert).</p>
+  </div>
+
+  <h2>👤 Les Architectes</h2>
+  <p>
+Projet réalisé par Guillaume GREDER, Yoland COUDERT, Jérémy FRANCOIS et DRISS AOUSSAR.  </p>
+
+</section>
+<hr class="divider">
+
+          <section class="github-section">
+            <h2>Code Source</h2>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>Atlas-Network</h3>
+                  <span class="gh-author">TetoSolis / Atlas-Network</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis/Atlas-Network" target="_blank" class="gh-btn">Voir le dépôt ➔</a>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

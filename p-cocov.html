@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Covoiturage NFC — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html" class="projects-title btn-yellow">← Retour</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <img src="assets/images/cocov-logo.png" alt="Logo Covoiturage" class="project-logo">
+            <div class="project-meta">
+              <h1>Co'Voit NFC</h1>
+              <div class="card-tags">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Fullstack</span>
+                <span class="badge">Écologie</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <p class="intro-quote">
+              <em>"Moins cher que l'essence, plus convivial que le bus, et codé à la main (sans framework JS qui meurt en une semaine)."</em>
+            </p>
+            
+            <p>
+              <strong>Bienvenue sur Covoiturage Nord Franche-Comté.</strong> Ce projet a un objectif simple : faciliter le partage de trajets entre conducteurs et passagers dans la région. Parce que rouler seul dans une voiture de 5 places, c'est triste (et ça coûte cher).
+            </p>
+
+            <h2>✨ Ce que ça fait (Les Features)</h2>
+            <p>Une plateforme complète pour gérer vos déplacements sans prise de tête :</p>
+
+            <ul class="tech-list">
+              <li>
+                <strong>🔐 Douane Numérique :</strong> Inscription et authentification sécurisées. On ne laisse pas entrer n'importe qui (les robots sont priés de rester dehors).
+              </li>
+              <li>
+                <strong>🚙 Mode Conducteur :</strong> Publication de trajets avec date, heure et nombre de places. Idéal pour rentabiliser votre trajet Belfort-Montbéliard.
+              </li>
+              <li>
+                <strong>🔍 Mode Passager :</strong> Recherche avancée pour trouver un chauffeur qui ne conduit pas trop mal.
+              </li>
+              <li>
+                <strong>💬 BlaBlaChat :</strong> Système de messagerie intégré pour demander si le conducteur accepte les chats, les sandwichs au thon ou la musique techno.
+              </li>
+              <li>
+                <strong>📜 Mémoire d'éléphant :</strong> Historique complet des trajets passés et futurs (pour prouver que vous étiez bien à l'heure).
+              </li>
+            </ul>
+
+            <h2>🛠️ Sous le capot (Stack Technique)</h2>
+            <p>Pas de superflu, juste du solide qui tourne partout :</p>
+            
+            <div class="tech-grid">
+              <div class="tech-item">
+                <h3>Frontend 🎨</h3>
+                <p><strong>CSS / SCSS :</strong> Parce que le style, c'est important. Une interface propre, responsive, et faite maison.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Backend ⚙️</h3>
+                <p><strong>PHP (Natif) :</strong> L'indémodable. Pas de magie noire, juste de la logique pure et dure pour gérer les données.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Mémoire 🗄️</h3>
+                <p><strong>MySQL :</strong> Une base de données relationnelle robuste pour stocker utilisateurs, trajets et messages sans rien perdre.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Environnement 🚀</h3>
+                <p><strong>XAMPP :</strong> Le grand classique pour faire tourner Apache et MySQL en local sans casser son OS.</p>
+              </div>
+            </div>
+
+            <h2>🚀 Installation (Pour les courageux)</h2>
+            <p>
+              Envie de lancer votre propre concurrent à Uber sur votre machine locale ? Voici la recette :
+            </p>
+            <ul class="tech-list">
+              <li><strong>1. Cloner :</strong> Récupérez le code (`git clone ...`).</li>
+              <li><strong>2. XAMPP :</strong> Installez-le, lancez Apache & MySQL, et croisez les doigts pour que les ports ne soient pas déjà pris par Skype.</li>
+              <li><strong>3. Data :</strong> Importez `covoiturage.sql` via PHPMyAdmin.</li>
+              <li><strong>4. Déployer :</strong> Glissez tout dans `htdocs` et admirez le résultat sur `localhost`.</li>
+            </ul>
+
+            <h2>🤝 La Dream Team</h2>
+            <p>
+              Un projet mené tambour battant par <strong>Guillaume GREDER</strong> (TetoSolis), <strong>Julien BIERMÉ</strong> et <strong>Timothée BEAUDOUX</strong>.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <h2>Code Source</h2>
+            <p>Le code est open-source. N'hésitez pas à lâcher une étoile (⭐) si ça vous a servi !</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>Covoiturage</h3>
+                  <span class="gh-author">TetoSolis / PHP-Project</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis/Covoiturage" target="_blank" class="gh-btn">Voir le dépôt ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

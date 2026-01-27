@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boîte à Chaussettes — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html" class="projects-title btn-yellow">← Retour</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <img src="assets/images/bas-logo.png" alt="Logo Chat Java" class="project-logo">
+            <div class="project-meta">
+              <h1>Boîte à Chaussettes (SAE 302)</h1>
+              <div class="card-tags">
+                <span class="badge">Java</span>
+                <span class="badge">UDP</span>
+                <span class="badge">Swing</span>
+                <span class="badge">Sockets 🧦</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <p class="intro-quote">
+              <em>"Une application de chat où les messages arrivent... ou pas. C'est ça, la magie de l'UDP."</em>
+            </p>
+            
+            <p>
+              <strong>Bienvenue sur "Boîte à Chaussettes".</strong> Pourquoi ce nom ? Parce que traduire <em>Socket</em> littéralement par <em>Chaussette</em> dans tout le code source nous semblait être une excellente idée à 3h du matin. C'est une application de messagerie Client/Serveur entièrement codée en Java et communiquant en UDP.
+            </p>
+
+            <h2>✨ Les Fonctionnalités (Ce qui marche)</h2>
+            <p>Une messagerie minimaliste mais robuste (tant que le réseau l'est) :</p>
+
+            <ul class="tech-list">
+              <li>
+                <strong>🔐 Authentification :</strong> Login et mot de passe. Parce que même dans une boîte à chaussettes, on trie le linge.
+              </li>
+              <li>
+                <strong>💬 Chat Temps Réel :</strong> Discutez avec vos amis instantanément. Enfin, à la vitesse d'un datagramme UDP perdu dans le cosmos.
+              </li>
+              <li>
+                <strong>👥 Gestion d'Amis :</strong> Système de demande et validation. On ne mélange pas les serviettes et les torchons.
+              </li>
+              <li>
+                <strong>📬 Messages Hors-Ligne :</strong> Le serveur garde vos messages au chaud si vous n'êtes pas là.
+              </li>
+              <li>
+                <strong>📜 Mémoire courte :</strong> Historique des 10 derniers messages stocké localement. Ce qui se passe avant part au lavage.
+              </li>
+            </ul>
+
+            <h2>🏗️ Architecture & "Chaussette"</h2>
+            <p>Le code est structuré de manière modulaire, avec une nomenclature qui fera hurler les puristes :</p>
+            
+            <div class="tech-grid">
+              <div class="tech-item">
+                <h3>La Chaussette 🧦</h3>
+                <p>La classe <code>Chaussette.java</code>. C'est notre interface de communication UDP. Elle habille vos données pour qu'elles n'aient pas froid sur le réseau.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Le Serveur 🖥️</h3>
+                <p>Le chef d'orchestre (ou le tiroir principal). Il gère les <code>Sessions</code>, stocke les messages en attente et fait le tri.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Le Client 👤</h3>
+                <p>Équipé d'une superbe interface <strong>Swing</strong> (le charme du rétro) pour envoyer des requêtes <code>SEND</code>, <code>UPDATE</code> ou <code>NOTIFY</code>.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Protocole 📡</h3>
+                <p>Un protocole maison. Pas de JSON, pas de XML, juste des virgules et du texte brut. Efficace, léger, et lavable en machine.</p>
+              </div>
+            </div>
+
+            <h2>🚀 Installation (Old School)</h2>
+            <p>
+              Pas de `npm install` ici. On compile à l'ancienne, comme des vrais :
+            </p>
+            <ul class="tech-list">
+              <li><strong>1. Compiler :</strong> <code>javac -d out src/*.java</code> (Ça chauffe le processeur).</li>
+              <li><strong>2. Serveur :</strong> <code>java -cp out Server</code> (À lancer en premier, sinon c'est le vide).</li>
+              <li><strong>3. Clients :</strong> <code>java -cp out Client</code> (Lancez-en plusieurs pour vous parler à vous-même).</li>
+            </ul>
+
+            <h2>🤝 Les Développeurs</h2>
+            <p>
+              Tricoté avec amour (et beaucoup de café) par <strong>Guillaume GREDER</strong>, <strong>Yanis DEZZAZ</strong> et <strong>Mathis GUESDON</strong>.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <h2>Code Source</h2>
+            <p>Le code est disponible sous licence MIT. Servez-vous, c'est gratuit (comme une chaussette orpheline).</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>Boite-a-Chaussettes</h3>
+                  <span class="gh-author">GuillaumeGREDER / SAE-302</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis/Boite-Chausette" target="_blank" class="gh-btn">Voir le dépôt ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

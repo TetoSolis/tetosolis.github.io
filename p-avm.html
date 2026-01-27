@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gant Connecté Minecraft — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html" class="projects-title">← Retour</a>
+
+        <article class="project-detail">
+
+          <header class="project-header">
+            <img src="assets/images/avm-logo.png" alt="Gant Minecraft" class="project-logo">
+            <div class="project-meta">
+              <h1>Aqua VS Magma</h1>
+              <div class="card-tags">
+                <span class="badge">IoT</span>
+                <span class="badge">ESP32</span>
+                <span class="badge">Python</span>
+                <span class="badge">Redstone</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <p class="intro-quote">
+              <em>"Fusionner le réel et le virtuel pour lancer des éclairs en bougeant le petit doigt. Littéralement."</em>
+            </p>
+            
+            <p>
+              Ce projet vise à intégrer un <strong>gant connecté</strong> dans un environnement virtuel. L'objectif ? Rendre Minecraft encore plus immersif (et un peu plus physique) grâce à des super pouvoirs activés dans un mini-jeu compétitif.
+            </p>
+
+            <h2>🎥 La Preuve en Vidéo</h2>
+            <p>
+              Parce qu'un bon projet IoT se doit d'être vu pour être cru. La vidéo est divisée en deux actes :
+            </p>
+            <ul class="tech-list">
+              <li>🧠 <strong>La Théorie :</strong> Explication détaillée du fonctionnement (pour ceux qui aiment comprendre).</li>
+              <li>🔥 <strong>La Pratique :</strong> Démonstration en jeu (pour ceux qui veulent juste voir des explosions).</li>
+            </ul>
+            
+            <div style="margin: 1.5rem 0; text-align: center;">
+              <a href="https://www.youtube.com/watch?v=33_mbglr2H0" target="_blank" class="projects-title btn-yellow" style="display: inline-block;">
+                ▶ Voir la vidéo
+              </a>
+            </div>
+
+            <h2>📦 Le Matériel (L'Arsenal)</h2>
+            <p>Pour réaliser cette merveille technologique, nous avons vidé quelques tiroirs :</p>
+            
+            <div class="tech-grid">
+              <div class="tech-item">
+                <h3>Cerveaux & Muscles</h3>
+                <p>2 Raspberry Pi (les chefs d'orchestre) et 2 ESP32 (les muscles dans le gant).</p>
+              </div>
+              <div class="tech-item">
+                <h3>Infrastructure</h3>
+                <p>Borne Linksys pour le réseau local et des ordinateurs portables pour le serveur.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Bricolage</h3>
+                <p>Platine de montage, boutons poussoirs et une quantité déraisonnable de câbles.</p>
+              </div>
+              <div class="tech-item">
+                <h3>Style</h3>
+                <p>Un gant (de préférence confortable) pour porter tout ça sans avoir l'air d'un cyborg cassé.</p>
+              </div>
+            </div>
+
+            <h2>🎯 Les Règles du Jeu (User Stories)</h2>
+            <p>Nous avons défini le projet autour de 4 axes principaux, ou "User Stories" pour faire pro :</p>
+
+            <ul class="tech-list">
+              <li>
+                <strong>US 1 : Le Réseau (Jouer ensemble, c'est mieux).</strong><br>
+                Mise en place d'un serveur Minecraft local où deux équipes s'affrontent pour trouver un diamant caché aléatoirement.
+              </li>
+              <li>
+                <strong>US 2 : Les Super Pouvoirs (Tricher légalement).</strong><br>
+                Chaque doigt (sauf le pouce, il sert à tenir la souris) déclenche une action : pièges, bonus ou malus pour l'adversaire.
+              </li>
+              <li>
+                <strong>US 3 : Config & Stabilité.</strong><br>
+                Gestion de l'anti-rebond (pour éviter de lancer 50 sorts en éternuant) et assignation personnalisée des pouvoirs.
+              </li>
+            </ul>
+
+            <h2>⚔️ Le Mini-Jeu : "Hunt the Diamond"</h2>
+            <p>
+              <strong>Objectif :</strong> Trouver et casser le bloc de diamant en moins de 10 minutes.
+              <br><strong>Les Équipes :</strong> 2 vs 2. Un "Combattant" (qui tape) et un "Sorcier" (qui gère le gant).
+              <br><strong>Victoire :</strong> Soit vous trouvez le diamant, soit vous empêchez les autres de le trouver pendant 10 minutes. Tous les coups sont permis (surtout ceux du gant).
+            </p>
+
+            <h2>🔧 Sous le capot (Technique)</h2>
+            <ul class="tech-list">
+              <li><strong>Réseau :</strong> Serveur Minecraft Spigot/Paper hébergé localement.</li>
+              <li><strong>IoT :</strong> Communication MQTT temps réel entre l'ESP32 (C++) et le script Python sur le Raspberry.</li>
+              <li><strong>Feedback :</strong> Retour visuel et haptique sur la distance du diamant.</li>
+            </ul>
+
+            <h2>🤝 Les Responsables</h2>
+            <p>
+              Projet développé dans le cadre d'une SAE par <strong>Guillaume GREDER</strong> (TetoSolis), Xavier KNOEPPFLER, Théo MARCHAND et Yanis DEZZAZ.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <h2>Code Source</h2>
+            <p>Envie de fabriquer votre propre gant de l'infini version Minecraft ?</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>AquaVsMagma</h3>
+                  <span class="gh-author">TetoSolis / AquaVsMagma</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis/AquaVsMagma" target="_blank" class="gh-btn">Voir le dépôt ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Guillaume Greder — Portfolio</title>
+
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+    <defs>
+      <style>
+        @keyframes rotate {
+          from { transform: rotate(0deg); }
+          to   { transform: rotate(360deg); }
+        }
+        .out-top    { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top     { animation: rotate  60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom  { animation: rotate  90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+
+    <path fill="#ededec" class="out-top"
+      d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top"
+      d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom"
+      d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom"
+      d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main-content">
+      <div class="intro-container">
+
+        <a href="index.html#accueil" id="accueil" class="projects-title btn-yellow">
+          Accueil
+        </a>
+        <section class="yellow-content">
+
+          <div class="yellow-img">
+            <img src="assets/images/PP-blank.png" alt="Photo de Guillaume Greder" class="image-content">
+          </div>
+
+          <div class="yellow-text">
+            <p class="yellow-1"><strong>Guillaume GREDER</strong></p>
+            <br>
+
+            <p class="yellow-1">
+              "<i><strong>IoT, cybersécurité et réseaux :</strong> des compétences connectées au cœur de mes projets.</i>"
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p class="yellow-2">
+              Bienvenue dans mon univers numérique. Ici, j'explore les défis de l'<strong>administration système</strong>, de la <strong>cybersécurité</strong> et des <strong>objets connectés</strong>. </p>
+            <br>
+            <p class="yellow-2">
+              Ce site est la vitrine de mes <strong>réalisations</strong> et de mes compétences. Apprenez à me connaître et n'hésitez pas à me <strong>contacter</strong> pour collaborer.
+          </div>
+
+        </section>
+      </div>
+      <section class="projects-bg" id="projets">
+        <div class="projects-container">
+          <a href="index.html#projets" class="projects-title">
+            Projets
+          </a>
+
+          <div class="projects-carousel">
+            <button class="carousel-btn prev" type="button" aria-label="Projet précédent">‹</button>
+            <span class="carousel-separator left"></span>
+            <div class="projects-viewport">
+              <div class="projects-clip">
+                <div class="projects-track">
+                  
+                  <a href="p-an.html" class="blue-card">
+                    <img src="assets/images/an-logo.png" alt="Projet AN">
+                    <div class="card-tags">
+                      <span class="badge">Réseau</span>
+                      <span class="badge">Conception</span>
+                    </div>
+                  </a>
+
+                  <a href="p-avm.html" class="blue-card">
+                    <img src="assets/images/avm-logo.png" alt="Projet AVM">
+                    <div class="card-tags">
+                      <span class="badge">Automatisation</span>
+                      <span class="badge">Supervision</span>
+                    </div>
+                  </a>
+
+                  <a href="p-bas.html" class="blue-card">
+                    <img src="assets/images/bas-logo.png" alt="Projet BAS">
+                    <h3>Boîte À Chausettes</h3>
+                    <div class="card-tags">
+                      <span class="badge">Admin Sys</span>
+                      <span class="badge">Sécurité</span>
+                    </div>
+                  </a>
+
+                  <a href="p-cocov.html" class="blue-card">
+                    <img src="assets/images/cocov-logo.png" alt="Projet CoCov">
+                    <div class="card-tags">
+                      <span class="badge">Web</span>
+                      <span class="badge">Dev</span>
+                    </div>
+                  </a>
+
+                  <article class="blue-card">
+                    <img src="assets/images/dcc-logo.png" alt="Datacenter Connecté">
+                    <div class="card-tags">
+                      <span class="badge">IoT</span>
+                      <span class="badge">Monitoring</span>
+                    </div>
+                  </article>
+
+                  <a href="p-ws.html" class="blue-card">
+                    <img src="assets/images/ws-logo.png" alt="Atlas Network">
+                    <div class="card-tags">
+                      <span class="badge">Infra</span>
+                      <span class="badge">Multi-sites</span>
+                    </div>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+            <span class="carousel-separator right"></span>
+            <button class="carousel-btn next" type="button" aria-label="Projet suivant">›</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="about-section" id="about">
+        <div class="projects-container">
+          
+          <a href="#about" class="projects-title btn-yellow">
+            À propos & Articles
+          </a>
+
+          <div class="articles-grid">
+            
+            <a href="a-linux.html" class="yellow-card">
+              <img src="assets/images/p-linux-2.png" alt="Setup Linux">
+              <h3>Mon aventure Linux</h3>
+              <div class="card-tags">
+                <span class="badge">Arch Linux</span>
+                <span class="badge">Rice</span>
+              </div>
+            </a>
+
+            <a href="a-key.html" class="yellow-card">
+              <img src="assets/images/p-key-2.png" alt="Clavier Ergo-L">
+              <h3>AZERTY vs ERGO-L</h3>
+              <div class="card-tags">
+                <span class="badge">Ergonomie</span>
+                <span class="badge">Hardware</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+
+      <div class="project-page-container">
+        
+        <a href="index.html#contact" id="contact" class="projects-title btn-yellow">Contact</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <div style="font-size: 4rem;">📬</div>
+            <div class="project-meta">
+              <h1>Restons en contact</h1>
+              <div class="card-tags">
+                <span class="badge">Recrutement</span>
+                <span class="badge">Alternance</span>
+                <span class="badge">Freelance</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <p class="intro-quote">
+              <em>"À la recherche d'une opportunité, d'un projet fou ou simplement envie de discuter Linux autour d'un café virtuel ?"</em>
+            </p>
+            
+            <p>
+              Je suis actuellement disponible pour échanger sur des projets liés à l'<strong>Administration Système</strong>, la <strong>Cybersécurité</strong> et l'<strong>IoT</strong>. N'hésitez pas à me contacter via les canaux ci-dessous.
+            </p>
+
+            <h2>📍 Mes Coordonnées</h2>
+            
+            <div class="tech-grid">
+              
+              <div class="tech-item">
+                <h3>📧 Email</h3>
+                <p>
+                  <a href="mailto:greder.guillaume@hotmail.com" style="color: inherit; text-decoration: none; font-weight: bold;">
+                    greder.guillaume@hotmail.com
+                  </a>
+                </p>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">(Réponse garantie plus rapide que l'UDP)</p>
+              </div>
+
+              <div class="tech-item">
+                <h3>📱 Téléphone</h3>
+                <p>
+                  <a href="tel:+33617839321" style="color: inherit; text-decoration: none; font-weight: bold;">
+                    06 17 83 93 21
+                  </a>
+                </p>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">(Promis, je décroche)</p>
+              </div>
+
+              <div class="tech-item">
+                <h3>🐙 GitHub</h3>
+                <p>
+                  <a href="https://github.com/TetoSolis" target="_blank" style="color: inherit; text-decoration: none; font-weight: bold;">
+                    github.com/TetoSolis
+                  </a>
+                </p>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">(Pour voir mes commits à 3h du matin)</p>
+              </div>
+
+              <div class="tech-item">
+                <h3>🌍 Localisation</h3>
+                <p><strong>Belfort / Montbéliard</strong></p>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">(Et partout où il y a du Wi-Fi)</p>
+              </div>
+
+            </div>
+
+            <hr class="divider">
+
+            <div style="text-align: center; margin-top: 2rem;">
+              <h2>📄 Curriculum Vitae</h2>
+              <p style="margin-bottom: 1.5rem;">
+                Vous préférez le format papier ? Voici mon parcours complet, certifié sans Comic Sans MS.
+              </p>
+              
+              <a href="assets/docs/CV_Guillaume_GREDER.pdf" target="_blank" class="gh-btn" style="background-color: var(--bg-yellow-base); color: var(--text-gray-base); box-shadow: 0 4px 0 var(--bg-yellow-strong); border: 1px solid var(--bg-yellow-strong);">
+                <span style="font-size: 1.2rem; margin-right: 0.5rem;">📥</span> Télécharger mon CV
+              </a>
+            </div>
+
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

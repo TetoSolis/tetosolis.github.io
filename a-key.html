@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AZERTY vs ERGO-L — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html#projets" class="projects-title btn-yellow">← Retour</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <div style="font-size: 4rem;">⌨️</div>
+            <div class="project-meta">
+              <h1>Pourquoi continuer à s'infliger l'AZERTY ?</h1>
+              <div class="card-tags">
+                <span class="badge">Article</span>
+                <span class="badge">Ergonomie</span>
+                <span class="badge">Clavier</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+            
+            <p>
+              Pendant longtemps, j'ai utilisé le clavier AZERTY sans trop me poser de questions. C'est celui qu'on apprend à l'école, celui qu'on retrouve partout en France. Bref, la norme.
+            </p>
+
+            <p>
+              Mais avec le temps, surtout en codant et en passant pas mal de temps dans un terminal, j'ai commencé à sentir que quelque chose n'allait pas vraiment. Des doigts qui se tordent, des positions étranges, de la tension dans les mains... pas idéal quand on passe des heures à taper.
+            </p>
+
+            <p>
+              À force, c'est devenu désagréable. Et plutôt que d'accepter ça pour les prochaines décennies, je me suis dit qu'il valait mieux régler le problème maintenant. Après tout, l'AZERTY a été conçu à l'époque des machines à écrire, pas pour coder en 2025.
+            </p>
+
+            <div class="project-gallery">
+                </div>
+
+            <p>
+              En cherchant des alternatives, un ami (Plouf) m'a fait découvrir le BÉPO. Grosse révélation : on peut réellement taper autrement. Le BÉPO (image en bas) est pensé pour le français et réduit les déplacements des doigts. Ça m'a ouvert les yeux... mais aussi montré que chaque disposition a ses compromis, notamment dès qu'on sort du français ou qu'on code beaucoup.
+            </p>
+
+            <div class="project-gallery">
+               <img src="assets/images/p-key-1.png" alt="Disposition Clavier BÉPO">
+               <p class="caption">Disposition BÉPO</p>
+            </div>
+
+            <p>
+              Du coup, j'ai continué à creuser. Et là, je suis tombé sur ERGO-L. L'idée derrière ERGO-L est simple : moins forcer, plus de confort. Pas besoin d'être parfait sur le papier, l'objectif est surtout d'être agréable à utiliser tous les jours. Utilisable pour le français, l'anglais et le code.
+            </p>
+
+            <div class="project-gallery">
+               <img src="assets/images/p-key-2.png" alt="Disposition Clavier ERGO-L">
+               <p class="caption">Disposition ERGO-L</p>
+            </div>
+
+            <p>
+              Aujourd'hui, je débute l'apprentissage (première ligne en cours 189 caractères à la minutes contre 247 en AZERTY). C'est lent, parfois déroutant, mais clairement intéressant. Et surtout, je sens déjà que mes mains sont plus détendues et que mes mouvements sont plus naturels. L'objectif ? Pouvoir coder, écrire et travailler sans me battre avec mon clavier, et garder mes mains en bon état sur le long terme.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <p>Hésitez pas à venir sur mon Github pour découvrir mes projets :</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>TetoSolis</h3>
+                  <span class="gh-author">Profil GitHub</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis" target="_blank" class="gh-btn">Voir le profil ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>De l'ordinateur lent à l'incroyable — Guillaume Greder</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" aria-hidden="true">
+     <defs>
+      <style>
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .out-top { animation: rotate 120s linear infinite; transform-origin: 13px 25px; }
+        .in-top { animation: rotate 60s linear infinite; transform-origin: 13px 25px; }
+        .out-bottom { animation: rotate 150s linear infinite; transform-origin: 84px 93px; }
+        .in-bottom { animation: rotate 90s linear infinite; transform-origin: 84px 93px; }
+      </style>
+    </defs>
+    <path fill="#ededec" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+    <path fill="#d6d6d6" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+    <path fill="#ededec" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+    <path fill="#d6d6d6" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+  </svg>
+
+  <div class="grain">
+    
+    <header class="navbar">
+      <img src="assets/images/PP-blank.png" alt="Photo de profil" class="pp">
+      <a href="index.html" class="firstname">Guillaume</a>
+      <a href="index.html" class="lastname">GREDER</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+       <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      
+      <div class="project-page-container">
+        
+        <a href="index.html#projets" class="projects-title btn-yellow">← Retour</a>
+
+        <article class="project-detail theme-yellow">
+
+          <header class="project-header">
+            <div class="project-meta">
+              <h1>Comment passer d'un ordinateur vraiment pas fifou... à quelque chose d'incroyable ?</h1>
+              <div class="card-tags">
+                <span class="badge">Article</span>
+                <span class="badge">Linux</span>
+                <span class="badge">Retour d'expérience</span>
+              </div>
+            </div>
+          </header>
+
+          <hr class="divider">
+
+          <section class="project-body">
+
+            <h2>Vraiment pas fifou</h2>
+            <p>
+              Il existe une loi universelle chez les étudiants : on n'a pas d'argent. Évidemment, je suis étudiant, mais je suis débrouillard ! En quatre ans, j'ai réussi à récupérer cinq ordinateurs. Cinq machines vaillantes... Mais aussi âgées qu'un dinosaure. Pourtant, une solution existe pour nous, les geeks prêts à s'arracher quelques cheveux : Linux.
+            </p>
+
+            <p>
+              Car le vrai problème n'est pas le matériel (bon, un peu quand même), mais Windows : un système lourd, gourmand, et surtout très curieux. Télémétrie, pubs ciblées, historique d'usage, compte Microsoft obligatoire, collecte de données Wi-Fi et navigation... Une véritable usine à gaz que je ne peux pas ignorer avec un métier en cybersécurité. Deux solutions s'offraient donc à moi : jeter le PC par la fenêtre, ou installer Linux. J'ai choisi la deuxième option. Ma fenêtre m'en remercie encore et ma copine ne m'a pas encore tué.
+            </p>
+
+            <div class="project-gallery">
+               <img src="assets/images/p-linux-2.png" alt="Mon Ordinateur Vaillant">
+               <p class="caption">Un ordinateur vaillant et pas du tout poussiéreux.</p>
+            </div>
+
+            <h2>Le Grand Saut</h2>
+            <p>
+              Je suis alors parti sur Arch Linux, une distribution minimaliste, ultra personnalisable et connue pour transformer les débutants en experts... Après quelques crises existentielles. Au départ, on n'a rien : un terminal, Internet, la gestion des périphériques. Tout le reste, c'est notre problème.
+            </p>
+
+            <p>
+              C'est justement ce que je cherchais : apprendre, comprendre et configurer mon propre environnement. J'ai choisi Hyprland comme interface graphique pour son tiling automatique, qui organise l'écran dès qu'une fenêtre apparaît, et pour sa personnalisation poussée, où tout peut être ajusté. J'ai donc créé un menu d'alimentation avec rofi (solution pour faire des menus), développé ma propre barre de tâches, choisi un thème cohérent, ajusté les couleurs, organisé les fichiers de configuration... Et résolu des crises existentielles, car Linux sans problèmes, ce n'est plus Linux.
+            </p>
+
+            <div class="project-gallery">
+               <img src="assets/images/p-linux-1.png" alt="Mon bureau Hyprland personnalisé">
+               <p class="caption">Le résultat final : minimaliste et efficace.</p>
+            </div>
+
+            <h2>Bilan</h2>
+            <p>
+              Ce projet m'a beaucoup apporté. Plutôt que de sortir la carte bleue, j'ai appris à optimiser l'existant. J'y ai gagné en compétences sur Linux, les environnements minimalistes et la configuration système, tout en renforçant ma capacité à résoudre des problèmes. J'ai aussi développé une vraie sensibilité au design : harmonies de couleurs, cohérence visuelle, flat design, neumorphism... Autrement dit, j'ai transformé de vieux PC en machines parfaitement utilisables et magnifiques, tout en apprenant énormément.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section class="github-section">
+            <p>Vous pouvez me retrouver sur GitHub pour d'autres projets :</p>
+            <div class="github-card">
+              <div class="gh-header">
+                <div class="gh-info">
+                  <h3>TetoSolis</h3>
+                  <span class="gh-author">Profil GitHub</span>
+                </div>
+              </div>
+              <div class="gh-actions">
+                <a href="https://github.com/TetoSolis" target="_blank" class="gh-btn">Voir le profil ➔</a>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
